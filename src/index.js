@@ -8,8 +8,6 @@ let app = express();
 var path = require("path");
 global.appRoot = path.resolve(__dirname) + "/../";
 
-console.log(appRoot);
-
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
